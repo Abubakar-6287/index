@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>new form</title>
+    <meta http-equiv="refresh" content="">
+</head>
+<style>
+    /* *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    } */
+form{
+  width: 320px;
+  height: 470px;
+  /* background:radial-gradient(rgba(
+    0, 0, 255, 0.951),rgb(247, 23, 131)); */
+    background: rgb(8, 8, 82);
+  margin: 4rem auto;
+  align-items: center;
+  place-items: center;
+  justify-content: center;
+  border-radius: 5%;
+  position: relative;
+  box-shadow:  0px 6px 39px 6px rgba(0,0,0,1);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(136, 255, 0);
+}
+
+.conte{
+  /* background-color: rgba(95, 178, 0, 0.53); */
+  width: 25vh;
+  height: 10vh;
+  margin: 0rem auto;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  place-content: center;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  border: 0px solid rgb(254, 194, 254);
+  border-bottom-width: 2px;
+  border-radius: 10px;
+}
+
+
+.circle{
+  background-color: blue;
+  height: 10px;
+  width: 10px;
+  /* position: relative; */
+  border-radius: 10%;
+  display: grid;
+  justify-content: flex-end;
+  margin-top:auto;
+  margin-bottom: 5%;
+  animation: snak 1s alternate-reverse infinite;
+ 
+}
+@keyframes snak{
+    0%{
+        transform: translate(0px,-40px);
+        background-color: rgb(255, 242, 0);
+        border-radius: 50%;
+        direction: 2s;
+    
+    }
+    50%{
+        transform: translate(0px,0px);
+        background-color: white;
+        direction: 2s;
+    }
+    75%{
+        transform: translate(00px,0px);
+        background-color: white;
+    } 
+    100%{
+        transform: translate();
+        border-radius: 50%;
+        background: repeating-radial-gradient(blue,red,green,aqua);
+        transform: scale(2.50);
+        /* animation: ; */
+    }
+}
+.circle:nth-child(1){
+    animation-delay: 0.2s;
+}
+.circle:nth-child(2){
+    animation-delay: 0.4s;
+}
+.circle:nth-child(3){
+    animation-delay: 0.3s;
+}
+.circle:nth-child(4){
+    animation-delay: 0.5s;
+}
+.circle:nth-child(5){
+    animation-delay: 0.4s;
+}
+.circle:nth-child(6){
+    animation-delay: 0.6s;
+}
+.circle:nth-child(7){
+    animation-delay: 0.5s;
+}
+.circle:nth-child(8){
+    animation-delay: 0.7s;
+}
+
+h4{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT',
+     Calibri, 'Trebuchet MS', sans-serif;
+    animation: color 2s ease infinite;
+}
+@keyframes color{
+    20%{
+        transform: scale(1.1);
+        color: beige;
+    }
+    40%{
+        color: rgb(255, 255, 124);
+        transform:rotatey(450deg);
+    }}
+    input[type="email"]{
+        width: 70%;
+        height: 25px;
+        margin: 5px 11%;
+        border-radius: 15px;
+        border: 2px solid rgb(209, 255, 169);        border-left-width: 10px;
+        border-left-color: rgb(0, 252, 0);
+        background-color: rgba(0,0,0,02.2);
+        color: white;
+        box-shadow: 0px 6px 39px 6px rgb(42, 255, 123);
+        padding-left: 10px;
+        font-size: 17px;
+    }
+
+    input[type="password"]{
+        width: 70%;
+        height: 25px;
+        margin: 5px 11%;
+        border-radius: 15px;
+        border: 2px solid rgb(255, 0, 0);
+        border-left-width: 10px;
+        border-left-color: rgb(252, 0, 0);
+        background-color: rgba(0,0,0,5.5 );
+        color: rgb(246, 255, 0);
+        box-shadow: 0px 6px 39px 6px rgb(255, 0, 0);
+        padding-left: 10px;
+        font-size: 18px;
+    }
+
+    input[type="checkbox"]{
+        margin: 15px 2px 0px 28%;
+    }
+
+    p{
+        /* user-select: none; */
+        /* cursor: pointer; */
+        margin: 20px 0px 0px 0px;
+        animation: p 2s ease  infinite alternate-reverse ;
+        font-size: 18px;
+    }
+    @keyframes p {
+        20%{color: rgb(0, 132, 255);
+        transform: scaley(1.2);
+       }
+       100%{
+        color: rgb(255, 252, 85);
+       }
+    }
+ h5{
+        margin: 18px 30px 2px 45px;
+        font-size: 17px;
+       }
+    input[type="button"]{
+        margin: 40px 0px 0px 55px;
+        border-radius: 15px;
+        border: 2px solid rgb(68, 255, 0);
+        color: black;
+        width: 90px;
+        height: 4.60vh;
+        position: relative;
+        cursor: pointer;
+
+    }
+    input[type="button"]:active{
+        opacity: 5;
+        transform: scale(1.1);
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 20vh; 
+        box-shadow:  0px 2px 12px 0px black;
+        background-color: blue;  
+        color: white;
+    }
+
+    input[type="reset"]{
+        margin: 0px 0px 0px 25px;
+        width: 90px;
+        height: 4.60vh;
+        border: 2px solid rgb(255, 0, 0);
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    input[type="reset"]:active{
+        opacity: 5;
+        background-color: blue;
+        color: white;
+        transform: scale(1.1);
+        border-radius: 20vh;
+        border: 1px solid white;
+        box-shadow: 0px 2px 12px 0px black;
+    }
+#go-home{
+    margin-left: 115px;
+    margin-top: 20px;
+    background: rgba(97, 255, 255, 0.517);
+    border: 2px solid white;
+    cursor:pointer;
+}
+#go-home:hover{
+    color: white;
+    background: black;
+    transition: 0.70s;
+}
+</style>
+<body>
+    <form>
+<div class="conte">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</div><h4>Login Page</h4>
+<!-- <div class="form"> -->
+
+    <h5>Enter your email</h5>
+<input type="email" placeholder="AB                   @gmail.com">
+    <h5>Enter your password</h5>
+<input type="password" placeholder="Password ....."><br>
+<label><p><input type="checkbox">  Are you confirm</p></label>
+<a href=""><input type="button" value="Submit" id="button"></a>
+<input type="reset" value="Reset" id="button">
+<a href="index w.html"><input type="button" value="Go Home" id="go-home"></a>
+</form>
+</body>
+</html>
